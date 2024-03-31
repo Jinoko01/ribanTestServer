@@ -62,7 +62,7 @@ app.post("/data", (req, res) => {
   var recvData = req.body.data
   // 데이터 저장 폴더 및 데이터 저장 파일 생성
   if(!fs.existsSync(dataFolderPath)) {
-    fs.mkdir(dataFolderPath)
+    fs.mkdirSync(dataFolderPath)
   }
 
   if(!fs.existsSync(dataPath)) {
