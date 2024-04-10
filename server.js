@@ -45,7 +45,7 @@ app.get("/", (req, res) => {
 
 app.post("/data", (req, res) => {
   console.log(req.body);
-  logger.infgo(req.body);
+  logger.info(req.body);
   res.send(req.body);
 })
 
